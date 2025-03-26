@@ -20,3 +20,32 @@
 
 // [90, 50, 23]
 
+function findThreeNumbers($nums) {
+    // var_dump($nums);
+    if (count($nums) < 3) {
+        return 'Error: El arreglo debe de contener la menos tres numeros';
+    }
+    $first = 0;
+    $second = 0;
+    $third = 0;
+
+    foreach($nums as $num) {
+       
+        if ($num > $first) {
+            $third = $second;
+            $second = $first;
+            $first = $num;
+        } elseif ($num > $second) {
+            $third = $second;
+            $second = $num;
+        } elseif ($num > $third) {
+            $third = $num;
+        }
+    }
+    return [$first, $second, $third];
+}
+
+$arr = $arr = [10, 4, 3, 50, 23, 90];
+
+$result = findThreeNumbers($arr);
+print_r($result);
