@@ -37,7 +37,7 @@ function findThreeNumbers($nums) {
     return [$first, $second, $third];
 }
 
-$arr = $arr = [10, 4, 3, 50, 23, 90];
+$arr = [10, 4, 3, 50, 23, 90];
 
 $result = findThreeNumbers($arr);
 print_r($result);
