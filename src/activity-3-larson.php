@@ -36,6 +36,7 @@
     · Crea pruebas unitarias para diferentes casos de entrada.
 
     · Subir el código en un repositorio de GitHub y enviar en enlace al evaluador.
+    video: https://drive.google.com/file/d/1gk36WkEcyfAEGZu8p_JMD1qhihHdks1Z/view?usp=sharing
 */
 
 function processNumbers($nums)
